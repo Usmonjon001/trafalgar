@@ -1,0 +1,913 @@
+
+h1,h2,h3,h4,h5,h6, p, ul, a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+}
+                                                                                                                
+/*Fixed Navigation Bar Uchun Stillar*/
+
+.NavigationBar{
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	position: fixed;
+	background-color: #fff;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headerLogo a{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 250px;
+	padding: 24px 21px;
+}
+
+.headerLogo a:hover{
+	opacity: 0.8;
+}
+
+.headerLogo a:active{
+	opacity: 0.5;
+}
+
+.headerLogo span{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 27px;
+	color: #212B31;
+	text-transform: uppercase;
+}
+
+.NavigationItems{
+
+}
+
+.NavigationItems a{
+	padding: 36px 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	color: #72787D;
+}
+
+.NavigationItems a:hover{
+	color: #036FC7;
+}
+
+.NavigationItems a:active{
+	opacity: 0.7;
+}
+
+/*Navigation Uchun DropDown */
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown a{
+	display: block;
+}
+
+.dropdown-content { 
+	display: none;
+	width: 200px;
+	position: absolute;
+	z-index: 3;
+	background: #FFFFFF;
+	border: 1px solid #72787D;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.dropdown-content a{
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	padding: 20px 16px;
+}
+
+
+.dropdown-content a:hover{
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+/*Navigation Left Side Buttom*/
+
+#Navbutton{
+	padding: 13px 25px;
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	background: #212B31;
+	border: 1px solid #212B31;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;
+}
+
+#Navbutton:hover{
+	background-color: #fff;
+	color: #333;
+}
+
+#Navbutton:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+
+
+/*Section1 Uchun Stillar*/
+
+.Section1{
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+#Section1img1{
+	object-fit: contain;
+	margin-top: 102px;
+}
+
+#Section1img2{
+	margin-top: 33px;
+}
+
+.Section1 h1{
+	width: 818px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	color: #212B31;
+}
+
+.Section1btn{
+	width: 500px;
+	/*box-sizing: border-box;*/
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#section1btn1{
+	padding: 13px 25px;
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	background: #212B31;
+	border: 1px solid #212B31;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;
+	border: 2px solid transparent;
+}
+
+#section1btn1:hover{
+	background-color: #fff;
+	color: #333;
+	border: 2px solid #333;
+}
+
+#section1btn1:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+
+#section1btn2{
+	padding: 13px 25px;
+	color: #333;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #212B31;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;	
+	border: 2px solid #212B31;
+}
+
+#section1btn2:hover{
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #333;
+}
+
+#section1btn2:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+/*Section 1 Boxlar Uchun*/
+.Section1BoxContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 148px;
+}
+
+.Section1Box{
+	display: block;
+	text-align: center;
+	width: 325px;
+	height: 194px;
+}
+
+.Section1Box img{
+	object-fit: contain;
+}
+
+.Section1Box h3{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	margin-top: 32px;
+	color: #212B31;
+}
+
+.Section1Box p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #72787D;
+	margin-top: 10px;
+}
+
+/*Section 2 Uchun Stillar*/
+
+.section2{
+	width: 1200px;
+	margin-top: 142px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.section2 h2{
+	width: 781px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	color: #212B31;
+}
+
+.sec2 {
+	font-style: normal;
+	width: 1015px;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	text-align: center;
+	color: #72787D;
+	margin-top: 16px;
+}
+
+.section2BC{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;	
+	margin-top: 168px;
+}
+
+.Section2Box{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.Section2Box h3{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	color: #212B31;
+}
+
+.sec2FirstImg{
+	object-fit: contain;
+	margin-top: 40px;
+}
+
+.sec2h2{
+	margin-top: 142px;
+}
+
+#sec2Paragraph{
+	margin-top: 16px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	width: 542px;
+	color: #72787D;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.Section2Box a{
+	margin-top: 28px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	color: #212B31;
+	background-color: #FFC22D;
+}
+
+
+/*Section 3*/
+
+.section3{
+	border-top: 2px solid #EEF2F3;
+	border-bottom: 2px solid #EEF2F3;
+	padding: 56px 0;
+	margin-top: 100px;
+}
+
+.section3row1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section3row2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+
+/*Section 4 Uchun Stillar*/
+
+.section4Header{
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 78px;
+}
+
+.section4Header h2{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	color: #212B31;
+}
+
+.section4Header p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	margin-top: 21px;
+	width: 827px;
+	text-align: center;
+	color: #72787D;
+}
+
+.section4Box{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin-top: 64px;
+}
+
+.section4Box img{
+	object-fit: contain;
+	width: 452px;
+	height: 322px;
+}
+
+.section4BoxText{
+	width: 500px;
+}
+
+.section4BoxText h4{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 24px;
+	color: #212B31;
+}
+
+.section4BoxText p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 24px;
+	color: #72787D;
+	margin-top: 12px;
+}
+
+.section4Box:nth-child(odd){
+	flex-direction: row-reverse;
+}
+
+/*Section 5 Uchun Stillar*/
+
+.section5header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.section5header h2{
+	width: 100%;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	color: #212B31;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section5header h2:after{
+	content: url("./images/section5/leaf.svg");
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.section5header p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	width: 857px;
+	margin-top: 20px;
+	line-height: 32px;
+	text-align: center;
+	color: #72787D;
+}
+
+.section5Main{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 48px;
+}
+
+.section5MainBox{
+	display: block;
+	text-align: center;
+	width: 332px;
+	height: 250px;
+}
+
+.section5MainBox h4{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #212B31;
+	margin-top: 19px;
+}
+
+.section5MainBox p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 11px;
+	color: #72787D;
+
+}
+
+.section5notification{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 62px;
+	box-sizing: border-box;
+	padding: 50px 100px;
+	background: #F6F8F9;
+	border-radius: 5px;
+}
+
+.section5notification p{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	color: #212B31;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section5notification p:before{
+	content: url("./images/section5/hands.svg");
+	margin-right: 27px;
+}
+
+.section5notification a{
+	padding: 13px 25px;
+	background: #FFFFFF;
+	border: 1px solid #DADEDF;
+	box-sizing: border-box;
+	color: #212B31;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 4px
+}
+
+.section5notification a:hover{
+	background: #212B31;
+	color: #fff;
+}
+
+.section5notification a:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+
+/*Section 6 Ushun Stillar*/
+
+.section6{
+	width: 100%;
+	box-sizing: border-box;
+	height: 600px;
+	margin-top: 120px;
+	background-image: url("./images/section6.svg");
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 117px 38px;
+}
+
+.section6 h1{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 64px;
+	text-align: center;
+	width: 980px;
+	color: #212B31;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.section6Link{
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	align-items: center;
+}
+
+#section6Btn1{
+	padding: 13px 25px;
+	color: #fff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	background: #212B31;
+	border: 1px solid #212B31;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;
+	border: 2px solid transparent;
+}
+
+#section6Btn1:hover{
+	background-color: #fff;
+	color: #333;
+	border: 2px solid #333;
+}
+
+#section6Btn1:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+
+#section6Btn2{
+	padding: 13px 25px;
+	color: #333;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #212B31;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;	
+	border: 2px solid #212B31;
+}
+
+#section6Btn2:hover{
+	background-color: #333;
+	color: #fff;
+	border: 2px solid #333;
+}
+
+#section6Btn2:active{
+	color: #FFC22D;
+	background: #212B31;
+	opacity: 0.6;
+}
+
+/*Section 7 Uchun Stillar*/
+
+.section7{
+	width: 100%;
+	box-sizing: border-box;
+	background: #212B31;
+	padding: 101px 145px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.section7 h2{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 38px;
+	width: 319px;
+	line-height: 41px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.section7Form{
+	width: 300px;
+}
+
+.section7 input[type="text"], input[type="tel"], select{
+	padding: 13px 26px;
+	width: 100%;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #72787D;
+	background: #FFFFFF;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid transparent;
+	margin-top: 16px;
+}
+
+
+.section7 button{
+	background: #FFC22D;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	padding: 13px 77px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid transparent;
+	margin-top: 16px;
+}
+
+.section7 button:hover{
+	background: #212B31;
+	border: 1px solid #FFC22D;
+	color: #FFC22D;
+}
+
+.section7 button:active{
+	color: #333;
+	opacity: 0.6;
+	background: #FFC22D;
+}
+
+/*FFFFooooooooottttttttteeeeeeeerrrrrr*/
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 107px;
+}
+
+.footertop{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.footerText1{
+	width: 221px;
+	display: block;
+	/*display: flex;
+	align-items: flex-start;*/
+	flex-wrap: wrap;
+}
+
+.footerLogo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.ftrImg1{
+	object-fit: contain;
+}
+
+.footerLogo img:hover{
+	opacity: 0.8;
+}
+
+.footerLogo img:active{
+	opacity: 0.5;
+}
+
+.footerLogo span{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 27px;
+	color: #212B31;
+	text-transform: uppercase;
+}
+
+.footerText1 p, a{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	color: #72787D;
+	margin-top: 10px;
+}
+
+.footerText1 a:hover{
+	color: #036FC7;
+}
+
+.footerText1 a:active{
+	opacity: 0.6;
+}
+
+.footerText1 img{
+}
+
+#ftrFacebook{
+	margin-top: 20px;
+}
+
+#foterlist{
+	padding-top: 0;
+}
+
+.footertop li{
+	padding-top: 15px;
+}
+
+.footertop li a:hover{
+	color: #036FC7;
+}
+
+.footertop li a:active{
+	opacity: 0.7;
+}
+
+.footerbotton{
+	border-top: 1px solid #DADEDF;
+	padding: 32px 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 165px;
+}
+
+.footerbotton p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #72787D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
