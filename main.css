@@ -9,6 +9,7 @@ h1,h2,h3,h4,h5,h6, p, ul, a {
 body{
 	margin: 0;
 	padding: 0;
+	font-family: inter;
 }
 
 .container{
@@ -28,6 +29,7 @@ body{
 	align-items: center;
 	top: 0;
 	position: fixed;
+	z-index: 11111111;
 	background-color: #fff;
   	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -36,7 +38,6 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 250px;
 	padding: 24px 21px;
 }
 
@@ -52,9 +53,9 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
-	line-height: 27px;
 	color: #212B31;
 	text-transform: uppercase;
+	margin-left: 30px;
 }
 
 .NavigationItems{
@@ -66,7 +67,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 19px;
 	color: #72787D;
 }
 
@@ -124,13 +124,13 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 24px;
 	text-align: center;
 	background: #212B31;
 	border: 1px solid #212B31;
 	box-sizing: border-box;
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 4px;
+	margin-right: 20px;
 }
 
 #Navbutton:hover{
@@ -148,12 +148,13 @@ body{
 /*Section1 Uchun Stillar*/
 
 .Section1{
-	width: 1200px;
+	width: 100%;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	margin-top: 20px;
+	padding-top: 40px;
 }
 
 #Section1img1{
@@ -166,18 +167,15 @@ body{
 }
 
 .Section1 h1{
-	width: 818px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 48px;
-	line-height: 64px;
 	text-align: center;
 	color: #212B31;
+	margin: 0 150px;
 }
 
 .Section1btn{
-	width: 500px;
-	/*box-sizing: border-box;*/
 	margin-top: 30px;
 	display: flex;
 	justify-content: space-around;
@@ -190,13 +188,13 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 24px;
 	text-align: center;
 	background: #212B31;
 	border: 1px solid #212B31;
 	box-sizing: border-box;
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 4px;
+	margin-right: 20px;
 	border: 2px solid transparent;
 }
 
@@ -218,7 +216,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 24px;
 	text-align: center;
 	background: #fff;
 	border: 1px solid #212B31;
@@ -249,11 +246,17 @@ body{
 	margin-top: 148px;
 }
 
+
+
+
+
 .Section1Box{
 	display: block;
 	text-align: center;
-	width: 325px;
-	height: 194px;
+}
+
+.Section1Box:nth-child(even){
+	margin: 0px 100px 0;
 }
 
 .Section1Box img{
@@ -264,7 +267,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 24px;
 	margin-top: 32px;
 	color: #212B31;
 }
@@ -273,7 +275,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 24px;
 	color: #72787D;
 	margin-top: 10px;
 }
@@ -281,7 +282,8 @@ body{
 /*Section 2 Uchun Stillar*/
 
 .section2{
-	width: 1200px;
+	width: 100%;
+	box-sizing: border-box;
 	margin-top: 142px;
 	display: flex;
 	justify-content: center;
@@ -290,23 +292,20 @@ body{
 }
 
 .section2 h2{
-	width: 781px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
-	line-height: 48px;
 	text-align: center;
 	color: #212B31;
 }
 
 .sec2 {
 	font-style: normal;
-	width: 1015px;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 32px;
 	text-align: center;
 	color: #72787D;
+	margin: 100px;
 	margin-top: 16px;
 }
 
@@ -322,7 +321,7 @@ body{
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 50%;
 	box-sizing: border-box;
 }
 
@@ -330,7 +329,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
-	line-height: 48px;
 	color: #212B31;
 }
 
@@ -348,8 +346,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 32px;
-	width: 542px;
 	color: #72787D;
 	display: flex;
 	justify-content: flex-start;
@@ -360,11 +356,30 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 32px;
 	color: #212B31;
-	background-color: #FFC22D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	position: relative;
 }
 
+.Section2Box a::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	box-sizing: border-box;
+	background-color: #FFC22D;
+	z-index: -1;
+	bottom: 0;
+}
+
+
+.Section2Box a:hover::before{
+	height: 25px;
+	transition: all ease 0.5s;
+}
 
 /*Section 3*/
 
@@ -405,7 +420,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
-	line-height: 48px;
 	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
@@ -416,9 +430,8 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 32px;
+	margin: 0px 150px;
 	margin-top: 21px;
-	width: 827px;
 	text-align: center;
 	color: #72787D;
 }
@@ -428,7 +441,8 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 1200px;
+	width: 100%;
+	box-sizing: border-box;
 	margin-top: 64px;
 }
 
@@ -439,14 +453,13 @@ body{
 }
 
 .section4BoxText{
-	width: 500px;
+	width: 50%;
 }
 
 .section4BoxText h4{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 22px;
-	line-height: 24px;
 	color: #212B31;
 }
 
@@ -454,12 +467,11 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 24px;
 	color: #72787D;
 	margin-top: 12px;
 }
 
-.section4Box:nth-child(odd){
+.section4Box:nth-child(even){
 	flex-direction: row-reverse;
 }
 
@@ -470,6 +482,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-top: 150px;
 }
 
 .section5header h2{
@@ -478,7 +491,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 32px;
-	line-height: 48px;
 	text-align: center;
 	color: #212B31;
 	display: flex;
@@ -496,11 +508,11 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
-	width: 857px;
 	margin-top: 20px;
-	line-height: 32px;
 	text-align: center;
 	color: #72787D;
+	margin: 20px 150px;
+	width: 70%;
 }
 
 .section5Main{
@@ -513,15 +525,16 @@ body{
 .section5MainBox{
 	display: block;
 	text-align: center;
-	width: 332px;
-	height: 250px;
+}
+
+.section5MainBox:nth-child(even){
+	margin: 0 50px;
 }
 
 .section5MainBox h4{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 24px;
 	text-align: center;
 	color: #212B31;
 	margin-top: 19px;
@@ -531,7 +544,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 24px;
 	text-align: center;
 	margin-top: 11px;
 	color: #72787D;
@@ -553,8 +565,7 @@ body{
 .section5notification p{
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 32px;
+	font-size: 18px;;
 	color: #212B31;
 	display: flex;
 	align-items: center;
@@ -575,7 +586,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 24px;
 	text-align: center;
 	border-radius: 4px
 }
@@ -596,23 +606,24 @@ body{
 .section6{
 	width: 100%;
 	box-sizing: border-box;
-	height: 600px;
 	margin-top: 120px;
 	background-image: url("./images/section6.svg");
 	display: flex;
+	background-repeat: no-repeat;
+	background-size: cover;
 	align-items: flex-start;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 117px 38px;
+	padding: 200px 88px;
+	position: relative;
+	border-radius: 10px;
 }
 
 .section6 h1{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 48px;
-	line-height: 64px;
 	text-align: center;
-	width: 980px;
 	color: #212B31;
 	width: 100%;
 	box-sizing: border-box;
@@ -621,7 +632,6 @@ body{
 .section6Link{
 	display: flex;
 	justify-content: space-between;
-	width: 400px;
 	align-items: center;
 }
 
@@ -631,7 +641,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 24px;
 	text-align: center;
 	background: #212B31;
 	border: 1px solid #212B31;
@@ -639,6 +648,8 @@ body{
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 4px;
 	border: 2px solid transparent;
+	margin-top: 50px;
+	margin-right: 20px;
 }
 
 #section6Btn1:hover{
@@ -659,7 +670,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 17px;
-	line-height: 24px;
 	text-align: center;
 	background: #fff;
 	border: 1px solid #212B31;
@@ -667,6 +677,7 @@ body{
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 	border-radius: 4px;	
 	border: 2px solid #212B31;
+	margin-top: 50px;
 }
 
 #section6Btn2:hover{
@@ -694,12 +705,14 @@ body{
 	margin-top: 100px;
 }
 
+.section7Text{
+	width: 45%;
+}
+
 .section7 h2{
 	font-style: normal;
 	font-weight: 500;
 	font-size: 38px;
-	width: 319px;
-	line-height: 41px;
 	text-align: center;
 	color: #FFFFFF;
 }
@@ -715,7 +728,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 24px;
 	color: #72787D;
 	background: #FFFFFF;
 	border-radius: 4px;
@@ -731,7 +743,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 24px;
 	color: #000000;
 	padding: 13px 77px;
 	width: 100%;
@@ -772,11 +783,14 @@ body{
 }
 
 .footerText1{
-	width: 221px;
 	display: block;
 	/*display: flex;
 	align-items: flex-start;*/
 	flex-wrap: wrap;
+}
+
+.footerText1 a{
+	display: block;
 }
 
 .footerLogo{
@@ -786,6 +800,8 @@ body{
 	width: 100%;
 	box-sizing: border-box;
 }
+
+
 
 .ftrImg1{
 	object-fit: contain;
@@ -803,7 +819,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 27px;
 	color: #212B31;
 	text-transform: uppercase;
 }
@@ -812,9 +827,16 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
-	line-height: 24px;
 	color: #72787D;
-	margin-top: 10px;
+}
+
+.footerAnchor{
+	margin-top: 20px;
+	padding: 2px 0;
+}
+
+.Ftext{
+	margin-top: 20px;
 }
 
 .footerText1 a:hover{
@@ -863,7 +885,6 @@ body{
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
-	line-height: 24px;
 	color: #72787D;
 }
 
